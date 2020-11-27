@@ -114,6 +114,16 @@ img::-moz-selection {
   text-transform: uppercase;
 }
 
+.c-subscribe{
+  padding: 32px 24px 40px;
+    color: white;
+    border-radius: 2px;
+    background-color: #000c2d;
+    background-repeat: no-repeat;
+    background-position: right -80px top -120px;
+    background-image: url();
+}
+
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
