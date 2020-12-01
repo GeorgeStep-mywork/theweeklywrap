@@ -56,6 +56,25 @@
     line-height: 38px;
     margin-bottom: 30px;
 }
+/* Subscription Form visible only to Laptop users */
+.lapShow {display: none;}
+
+  /* Laptop Portrait and Landscape */
+  @media only screen and (min-device-width : 1247px){ 
+      .lapShow {display: inline;}
+  }
+
+  /* Subscription Form visible only to Phone users */
+
+  .mobileShow {display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen and (max-device-width : 1246px){ 
+      .mobileShow {display: inline;}
+  }
+/* .sub-b{
+  padding: 8px 9px;
+} */
 
 @media only screen and (max-width: 992px) {
   .subimg{
