@@ -21,7 +21,7 @@
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Q5XDB5T10"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -29,6 +29,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-2Q5XDB5T10');
+
 </script>
 </head>
 
@@ -62,14 +63,14 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+  <header class="masthead" style="background-image: url('img/about-bg.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Stay Motivated</h1>
-            <span class="subheading">Discover living a happier, healthier and more productive life</span>
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
           </div>
         </div>
       </div>
@@ -80,80 +81,55 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <a href="post4-success_is_not_an_accident.html">
-            <h2 class="post-title">
-              Success is not an Accident
-            </h2>
-            <h3 class="post-subtitle">
-              It is the result of your attitude and your attitude is a choice.
-            </h3>
-          </a>
-           <p class="post-meta">Posted by
-            <a href="georgestep.html">George Stephen</a>
-            on January 11, 2021</p>
+        <p>I'm George. I'm a school student, web-designer and blogger. I enjoy exploring the principles, strategies and tools that help us live happier, healthier, more productive lives.
+        </p>
+        <p>I also write a fair bit about productivity, creatvity, health, study techniques, personal well-being and more.</p>
+        <p>Finally, if you enjoy learning new stuff, you should consider joining my weekly newsletter, Monday Weekly. It's an email every Monday with a few thoughts, reflections, and insights on productivity and personal well-being.
+        </p>
+        <P>
+          <form action="https://www.SnapHost.com/captcha/send.aspx" method="post" id="NewsletterSubscriptionForm" onsubmit="return ValidateForm(this);" target="_top">
+            <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="mailtogeorgest@gmail.com" />
+          <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="H4RRB3F5ENWG" />
+          <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="https://georgestep-mywork.github.io/weekly-success/" />
+          <input id="skip_Subject" name="skip_Subject" type="hidden" value="Newsletter Subscription Form" />
+          <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
+          <script type="text/javascript">
+          function ValidateForm(frm) {
+          if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+          if (frm.Organization.value == "") {alert('Organization is required.');frm.Organization.focus();return false;}
+          if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+          if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+          if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
+          return true; }
+          function ReloadCaptchaImage(captchaImageId) {
+          var obj = document.getElementById(captchaImageId);
+          var src = '' + obj.src;
+          obj.src = '';
+          var date = new Date();
+          var pos = src.indexOf('&rad=');
+          if (pos >= 0) { src = src.substr(0, pos); }
+          obj.src = src + '&rad=' + date.getTime();
+          return false; }
+          </script>
+          <a href="https://www.snaphost.com/captcha/ReadyForms/NewsletterSubscriptionForm.aspx"><img id="CaptchaImage" alt="Newsletter Subscription form" title="HTML code for Newsletter Subscription form" border="0" style="margin-bottom:10px;"
+          src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=H4RRB3F5ENWG" /></a>
+          <br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a>
+          <br />
+          <i>Enter code here:</i>
+          <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:80px; border:1px solid #999999" maxlength="6" />
+
+        <P><div class="input-group input-group-newsletter">
+          <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="submit-button" id="FromEmailAddress" name="FromEmailAddress">
+          <div class="input-group-append">
+            <input id="skip_Submit" name="skip_Submit" type="submit" value="SUBSCRIBE" class="btn btn-secondary"/>
+          </div>
         </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post3-8_Steps_to_Change_our_Attitude.html">
-            <h2 class="post-title">
-            8 Steps to Change your Attitude
-            </h2>
-            <h3 class="post-subtitle">
-            Any fact facing us is not as important as our attitude toward it, for that determines our success or failure.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="georgestep.html">George Stephen</a>
-            on November 9, 2020</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post2-3_Factors_determine_Attitude.html">
-            <h2 class="post-title">
-              3 Factors that determine the attitude
-            </h2>
-            <h3 class="post-subtitle">
-              When your attitude is right, we realise that we are all walking on acres of diamonds.
-            </h3>
-          </a>
-           <p class="post-meta">Posted by
-            <a href="georgestep.html">George Stephen</a>
-            on November 2, 2020</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post1-Importance_of_Attitude.html">
-            <h2 class="post-title">
-              Importance of Attitude
-            </h2>
-            <h3 class="post-subtitle">
-              Ability teaches us how we do, motivation determines why we do, and attitude decides how well we do.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="georgestep.html">George Stephen</a>
-            on October 26, 2020</p>
-        </div>
-       <hr>
-        <div class="post-preview">
-          <a href="post1-Importance_of_Attitude.html">
-            <h2 class="post-title">
-              Failure is not an option
-            </h2>
-            <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
-        </div>
-        <hr>
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
+        </P>
+
+        <br /><br /><br />
+
+      </form>
+        </P>
       </div>
     </div>
   </div>
@@ -191,7 +167,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; The Weekly Wrap</p>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
         </div>
       </div>
     </div>
