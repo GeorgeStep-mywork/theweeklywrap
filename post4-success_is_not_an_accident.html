@@ -248,34 +248,6 @@
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ffac8c6cce06924"></script>
 
-<!-- JS for Formilla -->
-<script type="text/javascript">
-  (function () {
-      var head = document.getElementsByTagName("head").item(0);
-      var script = document.createElement("script");
-
-      var src = (document.location.protocol == 'https:'
-          ? 'https://www.formilla.com/scripts/feedback.js'
-          : 'http://www.formilla.com/scripts/feedback.js');
-
-      script.setAttribute("type", "text/javascript");
-      script.setAttribute("src", src); script.setAttribute("async", true);
-
-      var complete = false;
-
-      script.onload = script.onreadystatechange = function () {
-          if (!complete && (!this.readyState
-              || this.readyState == 'loaded'
-              || this.readyState == 'complete')) {
-              complete = true;
-              Formilla.guid = 'csd974e6-4003-41cd-bb13-b4fecbe26537';
-              Formilla.loadWidgets();
-          }
-      };
-
-      head.appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
