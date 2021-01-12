@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            Create a Form Dynamically  
+            with the JavaScript 
+        </title> 
+        <link rel="stylesheet" href="signuppagedemo.css">
+    </head> 
+  <body>
+    <div class="masthead">
+        <div class="masthead-bg"></div>
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-12 my-auto">
+              <div class="masthead-content text-white py-5 py-md-0">
+                <h1 class="mb-3">The Weekly Wrap</h1>
+                <p class="mb-5">
+                  <!-- <strong>26 October 2020</strong> --> Sign up for our free weekly Newsletter!</p>
+                  <form action="https://www.SnapHost.com/captcha/send.aspx" method="post" id="NewsletterSubscriptionForm" onsubmit="return ValidateForm(this);" target="_top">
+                    <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="mailtogeorgest@gmail.com" />
+                  <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="H4RRB3F5ENWG" />
+                  <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="https://georgestep-mywork.github.io/weekly-success/" />
+                  <input id="skip_Subject" name="skip_Subject" type="hidden" value="Newsletter Subscription Form" />
+                  <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
+                  <script type="text/javascript">
+                  function ValidateForm(frm) {
+                  if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+                  if (frm.Organization.value == "") {alert('Organization is required.');frm.Organization.focus();return false;}
+                  if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+                  if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+                  if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
+                  return true; }
+                  function ReloadCaptchaImage(captchaImageId) {
+                  var obj = document.getElementById(captchaImageId);
+                  var src = '' + obj.src;
+                  obj.src = '';
+                  var date = new Date();
+                  var pos = src.indexOf('&rad=');
+                  if (pos >= 0) { src = src.substr(0, pos); }
+                  obj.src = src + '&rad=' + date.getTime();
+                  return false; }
+                  </script>
+                  <a href="https://www.snaphost.com/captcha/ReadyForms/NewsletterSubscriptionForm.aspx"><img id="CaptchaImage" alt="Newsletter Subscription form" title="HTML code for Newsletter Subscription form" border="0" style="margin-bottom:10px;"
+                  src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=H4RRB3F5ENWG" /></a>
+                  <br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a>
+                  <br />
+                  <i>Enter code here:</i>
+                  <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:80px; border:1px solid #999999" maxlength="6" />
+                <div class="input-group input-group-newsletter">
+                  <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="submit-button" id="FromEmailAddress" name="FromEmailAddress">
+                  <div class="input-group-append">
+                    <input id="skip_Submit" name="skip_Submit" type="submit" value="SUBSCRIBE" class="btn btn-secondary"/>
+                  </div>
+                </div>
+    
+                <br /><br /><br />
+    
+              </form>
+              <p class="mb-5">If you enjoy learning new stuff, you should consider joining my newsletter. It's an email every Monday with a
+                        <strong> few thoughts, reflections, and insights</strong> of interesting books, articles and podcasts I've enjoyed that week.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body> 
+</html> 
