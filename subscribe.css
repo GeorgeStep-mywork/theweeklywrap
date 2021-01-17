@@ -95,6 +95,11 @@
 
 }
 
+/* Colour to separate Posts in Index page */
+hr.postsept{
+  border-top: 1px solid #555;
+
+}
 
 /* Subscription Form visible only to Laptop users */
 .lapShow {display: none;}
