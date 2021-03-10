@@ -222,3 +222,16 @@ hr.postsept{
 .text-center{
   text-align: center;
 }
+
+.article-caption{
+  font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: #868e96;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#more {display: none;}
