@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>The Weekly Wrap</title>
+  <title>About | The Weekly Wrap</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,6 +34,11 @@
 
 <!-- Image for title bar -->
 <link rel="icon" href="img/My Post (4).png" type="image/icon type">
+
+<!-- Js for The Form made with Google Sheets -->
+<script src="js/form-submission-handler.js"></script>
+
+
 </head>
 
 <body>
@@ -75,8 +80,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>About Me</h1>
-            <span class="subheading">This is what I do.</span>
+            <h1>About</h1>
+            <span class="subheading">This is what We do.</span>
           </div>
         </div>
       </div>
@@ -98,47 +103,31 @@
           <hr>
           <br>
 
-          <h3>Do you want to stand out from the rest in this world?</h3>
+          <h3 style="font-weight: 600;">Do you Want to Stand out from the Rest in this World?</h3>
           <br>
-          <form action="https://www.SnapHost.com/captcha/send.aspx" method="post" id="NewsletterSubscriptionForm" onsubmit="return ValidateForm(this);" target="_top">
-            <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="mailtogeorgest@gmail.com" />
-          <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="H4RRB3F5ENWG" />
-          <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="https://georgestep-mywork.github.io/weekly-success/" />
-          <input id="skip_Subject" name="skip_Subject" type="hidden" value="Newsletter Subscription Form" />
-          <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
-          <script type="text/javascript">
-          function ValidateForm(frm) {
-          if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
-          if (frm.Organization.value == "") {alert('Organization is required.');frm.Organization.focus();return false;}
-          if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
-          if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
-          if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
-          return true; }
-          function ReloadCaptchaImage(captchaImageId) {
-          var obj = document.getElementById(captchaImageId);
-          var src = '' + obj.src;
-          obj.src = '';
-          var date = new Date();
-          var pos = src.indexOf('&rad=');
-          if (pos >= 0) { src = src.substr(0, pos); }
-          obj.src = src + '&rad=' + date.getTime();
-          return false; }
-          </script>
-              <a href="https://www.snaphost.com/captcha/ReadyForms/NewsletterSubscriptionForm.aspx"><img id="CaptchaImage" alt="Newsletter Subscription form" title="HTML code for Newsletter Subscription form" border="0" style="margin-bottom:10px;"
-                src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=H4RRB3F5ENWG" /></a>
-                <br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a>
-                <br />
-              <i>Enter code here:</i>
-                <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:80px; border:1px solid #999999" maxlength="6" />
+
+          <center>          <form class="nlform" style="" method="POST" action="https://script.google.com/macros/s/AKfycbzUiXXCGSuT7Q9ODEJpLwi7NsFcAF8sD70eJvKo/exec">
+            <!-- <div class="container" style="padding: 20px;
+            background-color: #f1f1f1;">
+              <h2>Subscribe to our Newsletter</h2>
+              <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+            </div> -->
           
-        <P><div class="input-group input-group-newsletter">
-          <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="submit-button" id="FromEmailAddress" name="FromEmailAddress">
-          <div class="input-group-append">
-            <input id="skip_Submit" name="skip_Submit" type="submit" value="SUBSCRIBE" class="btn btn-secondary"/>
-          </div>
-        </div>
-        </P>
-      </form>
+            <div class="container nlcont" style="">
+              <input type="text" class="nltext" placeholder="Name" name="Name" required style=>
+              <input type="email" class="nltext" placeholder="Email address" name="Email" required style="">
+              <!-- <label>
+                <input type="checkbox" class="nlcheck" checked="checked" name="subscribe" style=""> Daily Newsletter
+              </label> -->
+            </div>
+          
+            <div class="container" style="font-family: Arial, Helvetica, sans-serif">
+              <input type="submit" class="nlsub" value="SUBSCRIBE" style="" name="From_About_Page">
+            </div>
+            <em>      <small style="text-align: left; font-size: 14px;">No spam. No politics. Only the best ideas and insight.</small>
+            </em>
+          </form></center>
+
           <hr>          
         </P>
       </div>
@@ -146,6 +135,53 @@
   </div>
 
   <hr>
+  <style>
+
+    .nlcont{
+      background-color:white
+    }
+
+    .nltext{
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .nlsub{
+      background-color: #037087;
+      color: white;
+      border: none; width: 100%;
+padding: 12px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+    }
+
+    .nlcheck{
+      margin-top: 16px;
+    }
+
+    @media only screen and (max-width: 938px) {
+
+      .nlform{
+      border: 3px solid #f1f1f1;
+  max-width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 938px) {
+    .nlform{
+      border: 3px solid #f1f1f1;
+  max-width: 100%;
+    }
+  }
+
+
+  </style>
 
   <!-- Footer -->
   <footer>
