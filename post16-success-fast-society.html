@@ -38,6 +38,20 @@
 <!-- Image for title bar -->
 <link rel="icon" href="img/My Post (4).png" type="image/icon type">
 
+<!-- One Signal Notifications -->
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "bb5217eb-6a10-418c-bbb7-93e297382be4",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
+
 </head>
 
 <body>
@@ -260,7 +274,7 @@
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ffac8c6cce06924"></script>
 
 <!-- Hello Bar for Pop Ups -->
-<script src="https://my.hellobar.com/5ed3c1aa5cd8f7dbfdf8dc2e172d0331a411aa4a.js" type="text/javascript" charset="utf-8" async="async"></script>
+<!-- <script src="https://my.hellobar.com/5ed3c1aa5cd8f7dbfdf8dc2e172d0331a411aa4a.js" type="text/javascript" charset="utf-8" async="async"></script> -->
 
 </body>
 
