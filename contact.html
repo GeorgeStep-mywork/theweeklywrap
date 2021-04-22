@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>The Weekly Wrap</title>
+  <title>Contact | The Weekly Wrap</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,9 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  <!-- Image for title bar -->
+<link rel="icon" href="img/My Post (4).png" type="image/icon type">
 
 </head>
 
@@ -78,7 +81,7 @@
         <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
         <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-        <form name="sentMessage" id="contactForm" novalidate>
+        <!-- <form name="sentMessage" id="contactForm" novalidate>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Name</label>
@@ -110,7 +113,42 @@
           <br>
           <div id="success"></div>
           <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
-        </form>
+        </form> -->
+
+        <!-- Start of Newsletter Form for Artciles -->
+        <div class="col-lg-8 col-xl-12 mx-auto">
+        <div class="card card-signin flex-row my-5">
+          <div class="card-img-left d-none d-md-flex">
+              <!-- Background image for card set in CSS! -->
+          </div>
+          <div class="card-body">
+            <!-- <h5 class="card-title text-center">Do you want to stand out from the rest in this world?</h5>
+            <small><u><strong></strong></u> <center>Subscribe now to our weekly newsletter, This isn’t meant for everyone, only for those who want to be <strong>AUTHORS</strong> of their <strong>LIFE</strong>. This might be <strong>YOU.</strong></center></small><br> -->
+            <form class="form-signin" method="POST" action="https://script.google.com/macros/s/AKfycbzUiXXCGSuT7Q9ODEJpLwi7NsFcAF8sD70eJvKo/exec">
+              <div class="form-label-group"  style="padding-bottom: 0%;">
+                <input type="text" id="inputUserame" class="form-control" placeholder="Name" name="Name" required autofocus>
+                <label for="inputUserame"></label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="Email" required>
+                <label for="inputEmail"></label>
+              </div>
+              <div class="form-label-group">
+                <input type="tel" id="inputNumber" class="form-control" placeholder="Phone Number" name="Phone Number">
+                <label for="inputEmail"></label>
+              </div>
+              <div class="form-label-group">
+                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                <label for="inputEmail"></label>
+              </div>
+              <input class="btn btn-sm btn-primary btn-block text-uppercase" type="submit"  name="From_Contact_Pages" value="SEND">
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    <!-- End of Newsletter -->
         <P>You can also consider sending us a mail (<a href="mailto: twwrap@gmail.com">twwrap@gmail.com</a>). We read 100% of emails but there's only enough time in the day to reply to around 30%. If you reply to our <a href="newsletter.html">weekly Tuesday newsletter</a> with a specific question, the chances we'll reply are much higher.</p>
       </div>
     </div>
@@ -123,32 +161,40 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <!-- <ul class="list-inline text-center">
+          <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.instagram.com/theweeklywrap.blog/" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.linkedin.com/company/the-weekly-wrap/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://mail.google.com/mail/u/0/?fs=1&to=twwrap@gmail.com&su=SUBJECT&body=BODY&tf=cm" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/Theweeklywrapblog/" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul> -->
+          </ul>
           <p class="copyright text-muted">Copyright &copy; The Weekly Wrap 2021</p>
         </div>
       </div>
