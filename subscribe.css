@@ -33,6 +33,11 @@
   text-decoration: none;
 }
 
+.backlink{
+  color: #9a480d;
+  text-decoration: none;
+}
+
 .subs{
   background: #f3fafd;
   display: flex;
