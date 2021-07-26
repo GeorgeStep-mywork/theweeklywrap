@@ -444,4 +444,11 @@ a:hover {
 }
 
 
+/* Mark */
+
+mark {
+  background: #fff099;
+  color: #000000;
+}
+
 
