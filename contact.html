@@ -205,7 +205,7 @@ Want to get in touch? Fill out the form below to send us a message and we will g
           <div class="card-body">
             <!-- <h5 class="card-title text-center">Do you want to stand out from the rest in this world?</h5>
             <small><u><strong></strong></u> <center>Subscribe now to our weekly newsletter, This isn’t meant for everyone, only for those who want to be <strong>AUTHORS</strong> of their <strong>LIFE</strong>. This might be <strong>YOU.</strong></center></small><br> -->
-            <form class="form-signin" method="POST" action="https://script.google.com/macros/s/AKfycbzUiXXCGSuT7Q9ODEJpLwi7NsFcAF8sD70eJvKo/exec">
+            <!-- <form class="form-signin" method="POST" action="https://script.google.com/macros/s/AKfycbzUiXXCGSuT7Q9ODEJpLwi7NsFcAF8sD70eJvKo/exec">
               <div class="form-label-group"  style="padding-bottom: 0%;">
                 <input type="text" id="inputUserame" class="form-control" placeholder="Name" name="Name" required autofocus>
                 <label for="inputUserame"></label>
@@ -225,12 +225,72 @@ Want to get in touch? Fill out the form below to send us a message and we will g
               </div>
               <input class="btn btn-sm btn-primary btn-block text-uppercase" type="submit"  name="From_Contact_Pages" value="SEND">
               
+            </form> -->
+
+            <form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+              <input name="skip_WhereToSend" type="hidden" value="twwrap@gmail.com" />
+              <input name="skip_SnapHostID" type="hidden" value="8NA4NNHYPQ7H" />
+              <input name="skip_WhereToReturn" type="hidden" value="https://theweeklywrapblog.com/about.html" />
+              <input name="skip_Subject" type="hidden" value="Contact Us Form" />
+              <input name="skip_ShowUsersIp" type="hidden" value="1" />
+              <input name="skip_SendCopyToUser" type="hidden" value="1" />
+              <script type="text/javascript">
+              function ValidateForm(frm) {
+              if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+              if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+              if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+              if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
+              if (frm.skip_CaptchaCode.value == "") {alert('Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
+              return true; }
+              function ReloadCaptchaImage(captchaImageId) {
+              var obj = document.getElementById(captchaImageId);
+              var src = '' + obj.src;
+              obj.src = '';
+              var date = new Date();
+              var pos = src.indexOf('&rad=');
+              if (pos >= 0) { src = src.substr(0, pos); }
+              obj.src = src + '&rad=' + date.getTime();
+              return false; }
+              </script>
+              <div class="form-label-group"  style="padding-bottom: 0%;">
+                <input type="text" id="inputUserame" class="form-control" placeholder="Name" name="Name" required>
+                <label for="inputUserame"></label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="Email" required>
+                <label for="inputEmail"></label>
+              </div>
+              <div class="form-label-group">
+                <input type="text" id="inputSubject" class="form-control" placeholder="Subject" name="Subject" required>
+                <label for="inputEmail"></label>
+              </div>
+              <div class="form-label-group">
+                <textarea rows="5" class="form-control" placeholder="Message" id="message" name="Message" required data-validation-required-message="Please enter a message."></textarea>
+                <label for="inputEmail"></label>
+              </div>
+                    <!-- Please check our ProCaptcha service which is ad-free:
+      https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+      <!-- <a href="http://www.snaphost.com/captcha/captchaguestbook.aspx" alt="create guestbook" title="create guestbook">
+        create guestbook</a></td></tr> -->
+        <tr valign="top"><td> <i>Enter web form code:</i>
+        <input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
+        </td><td>
+        <a href="https://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
+        style="margin-left:20px;"
+        src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=8NA4NNHYPQ7H&ImgType=2" /></a>
+        <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
+        </table> <br />
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <input class="btn btn-sm btn-primary btn-block text-uppercase" type="submit"  name="From_Contact_Pages" value="SUBMIT">              
             </form>
+            
           </div>
         </div>
       </div>
     <!-- End of Newsletter -->
-        <P>You can also consider sending us a mail (<a href="mailto: twwrap@gmail.com">twwrap@gmail.com</a>). We read 100% of emails but there's only enough time in the day to reply to around 30%. If you reply to our <a href="newsletter.html">weekly newsletter</a> with a specific question, the chances we'll reply are much higher.</p>
+
+        <P>You can also consider sending us a mail (<a href="https://mail.google.com/mail/u/0/?fs=1&to=twwrap@gmail.com&su=SUBJECT&body=BODY&tf=cm" target="blank">twwrap@gmail.com</a>). We read 100% of emails but there's only enough time in the day to reply to around 30%. If you reply to our <a href="newsletter.html">weekly newsletter</a> with a specific question, the chances we'll reply are much higher.</p>
       </div>
     </div>
   </div>
