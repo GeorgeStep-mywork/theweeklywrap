@@ -8,7 +8,7 @@
 	"logo": "https://theweeklywrapblog.com/img/My%20Post%20(4).png",
 	"url": "http://theweeklywrapblog.com/",
 	"telephone": "+91 9544967011",
-	"sameAs": ["https://twitter.com/theweeklywrapbl","https://www.linkedin.com/company/theweeklywrapblog/","https://www.instagram.com/theweeklywrapblog/"],
+	"sameAs": ["https://twitter.com/theweeklywrapbl","https://www.linkedin.com/company/theweeklywrapblog/","https://www.instagram.com/improvementbytes/"],
 	"address": {
 		"@type": "PostalAddress",
 		"addressCountry": "Singapore"
